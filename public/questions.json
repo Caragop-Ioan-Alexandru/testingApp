@@ -1,0 +1,245 @@
+
+{
+    "results": [
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "Which of the following option leads to the portability and security of Java?",
+        "correct_answer": "Bytecode is executed by JVM",
+        "incorrect_answers": [
+          "The applet makes the Java code secure and portable",
+          "Use of exception handling",
+          "Dynamic binding between objects"
+        ],
+        "explanation":"The output of the Java compiler is bytecode, which leads to the security and portability of the Java code. It is a highly developed set of instructions that are designed to be executed by the Java runtime system known as Java Virtual Machine (JVM). The Java programs executed by the JVM that makes the code portable and secure. Because JVM prevents the code from generating its side effects. The Java code is portable, as the same byte code can run on any platform."
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "Which of the following is not a Java feature?",
+        "correct_answer": "Use of pointers",
+        "incorrect_answers": [
+          "Dynamic",
+          "Architecture Neutral",
+          "Object-oriented"
+        ],
+        "explanation": "The Java language does not support pointers; some of the major reasons are listed below:  <br/> &bull; One of the major factors of not using pointers in Java is security concerns. Due to pointers, most of the users consider C-language very confusing and complex. This is the reason why Green Team (Java Team members) has not introduced pointers in Java.<br/> &bull; Java provides an effective layer of abstraction to the developers by not using pointers in Java."
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "What should be the execution order, if a class has a method, static block, instance block, and constructor, as shown below? \r\n <pre class='line-numbers'><code class='language-java text-sm'>\r\n        public class First_C { \r\n          public void myMethod() {  \r\n           System.out.println('Method');  \r\n          }  \r\n          {  \r\n           System.out.println('Instance Block');  \r\n          }  \r\n          public void First_C() {  \r\n           System.out.println('Constructor');  \r\n          }  \r\n          static {  \r\n           System.out.println('static block');  \r\n          }  \r\n          public static void main(String[] args) {  \r\n           First_C c = new First_C();  \r\n           c.First_C();  \r\n           c.myMethod();  \r\n          }  \r\n        }   <\/code>\r\n      <\/pre>",
+        "correct_answer": "Static block, instance block, constructor, and method",
+        "incorrect_answers": [
+          "Instance block, method, static block, and constructor",
+          "Method, constructor, instance block, and static block",
+          "Static block, method, instance block, and constructor"
+        ],
+        "explanation":"The order of execution is:<br/> &bull; The static block will execute whenever the class is loaded by JVM.<br/> &bull; Instance block will execute whenever an object is created, and they are invoked before the constructors. For example, if there are two objects, the instance block will execute two times for each object.<br/> &bull; The constructor will execute after the instance block, and it also execute every time the object is created.<br/> &bull; A method is always executed at the end."
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",    
+        "question": "What will be the output of the following program? \r\n <pre class='line-numbers'><code class='language-java text-sm'>public class MyFirst {  \r\n      public static void main(String[] args) {  \r\n         MyFirst obj = new MyFirst(n);  \r\n }  \r\n static int a = 10;  \r\n static int n;  \r\n int b = 5;  \r\n int c;  \r\n public MyFirst(int m) {  \r\n       System.out.println(a + \", \" + b + \", \" + c + \", \" + n + \", \" + m);  \r\n   }  \r\n\/\/ Instance Block  \r\n  {  \r\n     b = 30;  \r\n     n = 20;  \r\n  }   \r\n\/\/ Static Block  \r\n  static {  \r\n     a = 60;  \r\n   }   \r\n }  <\/code>\r\n      <\/pre>",
+        "correct_answer": "60, 30, 0, 20, 0",
+        "incorrect_answers": [
+          "10, 5, 0, 20, 0",
+          "10, 30, 20",
+          "60, 5, 0, 20"
+        ],
+        "explanation":"In the above code, there are two values of variable a, i.e., 10 and 60. Similarly, there are two values of variable b, i.e., 5 and 30. But in the output, the values of a and b are 60 and 30, respectively. It is because of the execution order of the program.<br/>The execution order of the program is that the static block executes first, then instance block, and then constructor. Hence, the JVM will consider the value of a and b as 60 and 30 concerning the execution order. The value of a = 10 and b = 5 are of no use. And the value of variables c and m is 0 as we have not assigned any value to them."
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "The \\u0021 article is referred to as a",
+        "correct_answer": "Unicode escape sequence",
+        "incorrect_answers": [
+          "Octal escape",
+          "Hexadecimal",
+          "Line feed"
+        ],
+        "explanation":"In Java, Unicode characters can be used in string literals, comments, and commands, and are expressed by Unicode Escape Sequences. A Unicode escape sequence is made up of the following articles:<br/> &bull; A backslash '\\' (ASCII character 92)<br/> &bull; A 'u' (ASCII 117)<br/> &bull; One or more additional 'u' characters that are optional.<br/> &bull; A four hexadecimal digits (a character from 0 - 9 or a-f or A-F)"
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "_____ is used to find and fix bugs in the Java programs.",
+        "correct_answer": "JDB",
+        "incorrect_answers": [
+          "JVM",
+          "JRE",
+          "JDK"
+        ],
+        "explanation":"The Java Debugger (JDB or jdb) is a command-line java debugger that debugs the java class. It is a part of the Java Platform Debugger Architecture (JPDA) that helps in the inspections and debugging of a local or remote Java Virtual Machine (JVM)."
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "What is the return type of the hashCode() method in the Object class?",
+        "correct_answer": "int",
+        "incorrect_answers": [
+          "Object",
+          "long",
+          "void"
+        ],
+        "explanation":"In Java, the return type of hashCode() method is an integer, as it returns a hash code value for the object."
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "Which of the following is a valid long literal?",
+        "correct_answer": "0xnf029L",
+        "incorrect_answers": [
+          "ABH8097",
+          "L990023",
+          "904423"
+        ],
+        "explanation":"For every long literal to be recognized by Java, we need to add L character at the end of the expression. It can be either uppercase (L) or lowercase (l) character. However, it is recommended to use uppercase character instead of lowercase because the lowercase (l) character is hard to distinguish from the uppercase (i) character.<br/>For example,<br/> &bull; Lowercase l: 0x466rffl <br/> &bull; Uppercase L: 0nhf450L"
+      },
+      {
+        "category": "Java",
+        "annotation": "statements",
+        "question": "What does the expression float a = 35 / 0 return?",
+        "correct_answer": "Infinity",
+        "incorrect_answers": [
+          "0",
+          "Not a Number",
+          "Run time exception"
+        ],
+        "explanation":"In Java, whenever we divide any number (double, float, and long except integer) by zero, it results in infinity. According to the IEEE Standard for Floating-Point Arithmetic (IEEE 754), if we divide 1\/0 will give positive infinity, -1\/0 will give negative infinity, and 0\/0 will give NaN. But on dividing an integer by zero, it throws a runtime exception, i.e., java.lang.ArithmeticException."
+      },
+      {
+        "category": "Java",
+        "annotation": "loop",
+        "question": "What will be the output of the following program be? \r\n <pre class='line-numbers'><code class='language-java text-sm'>public class Test {  \r\n  public static void main(String[] args) {  \r\n    int count = 1;  \r\n    while (count <= 15) {  \r\n    System.out.println(count % 2 == 1 ? \"***\" : \"+++++\");  \r\n    ++count;  \r\n        }      \/\/ end while  \r\n    }       \/\/ end main   \r\n }  <\/code>\r\n      <\/pre>",
+        "correct_answer": "8 times *** and 7 times +++++",
+        "incorrect_answers": [
+          "15 times ***",
+          "15 times +++++",
+          "Both will print only once"
+        ],
+        "explanation":"In the above code, we have declared count = 1. The value of count will be increased till 14 because of the while (count<=15) statement. If the remainder is equal to 1 on dividing the count by 2, it will print (***) else print (+++++). Therefore, for all odd numbers till 15 (1, 3, 5, 7, 9, 11, 13, 15), it will print (***), and for all even numbers till 14 (2, 4, 6, 8, 10, 12, 14) it will print (+++++)."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "statements",
+        "question": "JavaScript language is ___",
+        "correct_answer": "Object-Based",
+        "incorrect_answers": [
+          "Object-Oriented",
+          "Assembly-language",
+          "High-level"
+        ],
+        "explanation":"JavaScript is not a pure OOP's (object oriented programming) based languages such as PHP, java or many other languages, although it is an object-based language. It is not OOP's based language, because it doesn't have three basic properties of object-oriented programming languages, such as polymorphism, encapsulation, and inheritance."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "statements",
+        "question": "Which of the following is the correct output for the following JavaScript code: \r\n <pre class='line-numbers'><code class='language-javascript text-sm'>var x=5,y=1  \r\nvar obj ={ x:10 }  \r\nwith(obj)  \r\n{  \r\n alert(y)  \r\n} <\/code>     <\/pre>",
+        "correct_answer": "1",
+        "incorrect_answers": [
+          "Error",
+          "10",
+          "5"
+        ],
+        "explanation":"he output of the above snippet code will be one because, first of all, the interpreter will search 'obj' for the property (y). But it fails to find 'obj' for property 'y,' so it chooses a value from outside the object, which is available within the given code."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "statements",
+        "question": "Among the following given JavaScript snippet codes, which is more efficient: <br/> Code A \r\n <pre class='line-numbers'><code class='language-javascript text-sm'>for(var number=10;number>=1;number--) {  \r\n document.writeln(number);  \r\n}     <\/code>\r\n      <\/pre>Code B \r\n <pre class='line-numbers'><code class='language-java text-sm'>var number=10;  \r\nwhile(number>=1) {  \r\n document.writeln(number);  \r\n number++;  \r\n}    <\/code>     <\/pre>",
+        "correct_answer": "Code A",
+        "incorrect_answers": [
+          "Code B",
+          "Both Code A and Code B",
+          "Cannot Compare"
+        ],
+        "explanation":"Code A will be more efficient. In fact, the second code may encounter a runtime error because the value of 'number' is never going to be equal to or less than one."
+      },
+      {
+        "category": "JavaScript", 
+        "annotation": "statements",   
+        "question": "Which one of the following is also known as a Conditional Expression:",
+        "correct_answer": "immediate if",
+        "incorrect_answers": [
+          "Alternative to if-else",
+          "Switch statement",
+          "If-then-else statement"
+        ],
+        "explanation":"A conditional expression can only evaluate two things, which either true or false, that are purely based on the evaluation of the condition"
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "statements",
+        "question": "In JavaScript, what is a block of statement?",
+        "correct_answer": "a block that combines a number of statements into a single compound statement",
+        "incorrect_answers": [
+          "a conditional block",
+          "both a conditional block and a single statement",
+          "a block that contains a single statement"
+        ],
+        "explanation":"A block of statement can be understand as the set of the zero or more statements. In general, a block of statement has common definition which combines one or a number of statements into a single statement for ease."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "statements",
+        "question": "When the interpreter encounters an empty statement, what will it do:",
+        "correct_answer": "Ignores the statements",
+        "incorrect_answers": [
+          "Shows a warning",
+          "Prompts to complete the statement",
+          "Throws an error"
+        ],
+        "explanation":"In JavaScript, when the interpreter encounters a empty statements it normally ignores or not response to that empty statement. The empty statements also sometimes very useful like we use the empty statements for creating loop for nothing."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "statements",
+        "question": "'Function' and 'var' are known as:",
+        "correct_answer": "Declaration statements",
+        "incorrect_answers": [
+          "Data types",
+          "Keywords",
+          "Prototypes"
+        ],
+        "explanation":"The 'Function' and 'var' both are the Declaration statements. These both are used for defining, and declaring variable, function in anywhere in the program."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "statements",
+        "question": "Which of the following Number object function returns the value of the number?",
+        "correct_answer": "valueOf()",
+        "incorrect_answers": [
+          "toString()",
+          "toLocaleString()",
+          "toPrecision()"
+        ],
+        "explanation":"The 'tofixed()' method formats the given number with a specific number of digits to the right of the decimal."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "variables",
+        "question": "Which of the following variables takes precedence over the others, if the names are the same?",
+        "correct_answer": "The local element",
+        "incorrect_answers": [
+          "Global variable",
+          "Both local and global",
+          "None of the answers"
+        ],
+        "explanation":"In JavaScript, the local variable takes precedence over the global variable if the name of both local and global variables is the same."
+      },
+      {
+        "category": "JavaScript",
+        "annotation": "variables",
+        "question": "Which one of the following is the correct way for calling the JavaScript code?",
+        "correct_answer": "Function/Method",
+        "incorrect_answers": [
+          "RMI",
+          "Triggering Event",
+          "Preprocessor"
+        ],
+        "explanation":"The JavaScript code can be called simply by making the function call to the element on which the JavaScript code execution has to be run. There are several other ways to call JavaScript code such as submit, onclick, and onload, etc."
+      }
+    ]
+  }

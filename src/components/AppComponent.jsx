@@ -79,16 +79,26 @@ function AppComponent() {
           </h1>
           {wrongAnnotation.indexOf("statements") !== -1 && (
             <p className="text-purple-800 font-bold text-center max-w-md">
-              It looks like you made some mistakes for the{" "}
-              <strong>statements</strong> type of questions. You can review the{" "}
-              <strong>statemens chapter</strong> and try again.
+              It looks like you made some mistakes for the
+              <strong>"statements"</strong> type of questions. You can review
+              the
+              <strong>"statemens chapter"</strong> and try again.
             </p>
           )}
           {wrongAnnotation.indexOf("loop") !== -1 && (
             <p className="text-purple-800 font-bold text-center max-w-md">
-              It looks like you made some mistakes for the <strong>loop</strong>{" "}
-              type of questions. You can review the{" "}
-              <strong>loops chapter</strong> and try again.
+              It looks like you made some mistakes for the{" "}
+              <strong>"loop"</strong>
+              type of questions. You can review the
+              <strong>"loops chapter"</strong> and try again.
+            </p>
+          )}
+          {wrongAnnotation.indexOf("variables") !== -1 && (
+            <p className="text-purple-800 font-bold text-center max-w-md">
+              It looks like you made some mistakes for the{" "}
+              <strong>"variables"</strong>
+              type of questions. You can review the
+              <strong>"variables"</strong> and try again.
             </p>
           )}
           <div className="flex justify-around items-center">

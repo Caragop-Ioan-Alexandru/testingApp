@@ -46,7 +46,7 @@ export const Login = () => {
 
   return (
     <div className="flex justify-center items-center h-screen text-center text-white">
-      {context !== "" ? (
+      {context !== null ? (
         <div className="welcome text-purple-800 ">
           <h2 className="text-3xl">
             Welcome, <span>{user.name}</span>
